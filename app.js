@@ -4,7 +4,7 @@ let btn = document.querySelector(".btn");
 let chatContainer = document.querySelector(".chat-container");
 let userMessage = null;
 let apiUrl =
-  'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=AIzaSyDQBDrSk8uuRaMZWLmwfvMX9Se0GDJH6GA';
+  'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-latest:generateContent?key=AIzaSyDQBDrSk8uuRaMZWLmwfvMX9Se0GDJH6GA';
 // creating tht chatbox function 3
 function createChatBox(html, className) {
   let div = document.createElement("div");
@@ -64,4 +64,5 @@ btn.addEventListener("click", function () {
   chatContainer.appendChild(userChatBox);
   prompt.value = "";
   setTimeout(showLoading, 500);
+
 });
